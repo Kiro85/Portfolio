@@ -1,0 +1,37 @@
+// =============================
+// Text colors (utilities)
+// =============================
+.u-text-primary         { color: $c-primary !important; }
+.u-text-primary-variant { color: $c-primary-variant !important; }
+.u-text-error           { color: $c-error !important; }
+.u-text-warning         { color: $c-warning !important; }
+.u-text-success         { color: $c-success !important; }
+.u-text-on-background   { color: $c-on-background !important; }
+.u-text-on-surface      { color: $c-on-surface !important; }
+.u-text-on-primary      { color: $c-on-primary !important; }
+
+// =============================
+// Background colors (utilities)
+// =============================
+.u-bg-primary           { background-color: $c-primary !important; color: $c-on-primary; }
+.u-bg-primary-variant   { background-color: $c-primary-variant !important; color: $c-on-primary; }
+.u-bg-background        { background-color: $c-background !important; color: $c-on-background; }
+.u-bg-surface           { background-color: $c-surface !important; color: $c-on-surface; }
+.u-bg-error             { background-color: $c-error !important; color: $c-on-primary; }
+.u-bg-warning           { background-color: $c-warning !important; color: $c-on-background; }
+.u-bg-success           { background-color: $c-success !important; color: $c-on-background; }
+
+// =============================
+// Headings (utilities)
+// =============================
+.u-h1  { font-size: $font-h1; font-weight: 700; line-height: 1.1; }
+.u-h2  { font-size: $font-h2; font-weight: 700; line-height: 1.15; }
+.u-h3  { font-size: $font-h3; font-weight: 600; line-height: 1.2; }
+
+// =============================
+// Body texts (utilities)
+// =============================
+.u-p-lg       { font-size: $font-body-lg; line-height: 1.6; }
+.u-p          { font-size: $font-body; line-height: 1.6; }
+.u-p-sm       { font-size: $font-body-sm; line-height: 1.4; }
+.u-caption    { font-size: $font-caption; opacity: 0.75; }

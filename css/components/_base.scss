@@ -1,0 +1,73 @@
+// GENERAL
+:root {
+    font-size: 16px;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f0f0f;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+}
+
+footer {
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {@extend .u-h1}
+h2 {@extend .u-h2}
+h3 {@extend .u-h3}
+p {@extend .u-p};
+
+
+// SKILLS & PROJECTS
+.skills,
+.projects,
+.contact {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    h2 {
+        color: $c-on-background;
+        position: relative;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, $c-primary, $c-primary-variant);
+            border-radius: 2px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: $font-h2-mb;
+    }
+}

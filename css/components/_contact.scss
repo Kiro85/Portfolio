@@ -1,0 +1,100 @@
+.contact {
+    background: linear-gradient(180deg, transparent 0%, rgba($c-primary, 0.03) 100%);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
+
+    &.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-wrapper {
+    max-width: 700px;
+}
+
+.contact-form {
+    background: rgba($c-surface, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba($c-primary, 0.15);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-input,
+.contact-textarea {
+    background: rgba($c-background, 0.5) !important;
+    border: none !important;
+    border-bottom: 2px solid rgba($c-on-surface, 0.2) !important;
+    border-radius: 0 !important;
+    color: $c-on-surface !important;
+    padding: 0.8rem 0.4rem !important;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &::placeholder {
+        color: rgba($c-on-surface, 0.4);
+    }
+
+    &:focus {
+        outline: none !important;
+        background: rgba($c-background, 0.7) !important;
+        border-bottom-color: $c-primary !important;
+        box-shadow: none !important;
+    }
+}
+
+.contact-textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+
+    &:focus {
+        background: rgba($c-background, 0.7) !important;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact {
+        min-height: 70vh;
+        transition: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .contact-form {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-form {
+        padding: 1.5rem 1rem;
+    }
+
+    .form-label {
+        font-size: $font-body-sm !important;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        font-size: $font-body-sm !important;
+    }
+}

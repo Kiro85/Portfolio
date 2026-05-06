@@ -1,0 +1,86 @@
+.navbar {
+    // Línea inicial
+    border-top: 4px solid $c-primary;
+    background: transparent;
+    padding: 0;
+    height: 4px;
+    overflow: visible;
+    transition: all 300ms ease;
+    width: 100%;
+    max-width: 100%;
+
+    // Contenido oculto 
+    .navbar-collapse {
+        opacity: 0;
+        transform: translateY(-8px);
+        transition: all 250ms ease;
+        pointer-events: none;
+    }
+
+    .navbar-toggler {
+        opacity: 0;
+        pointer-events: none;
+        border: 1px solid transparent;
+        transition: all 250ms ease;
+    }
+
+    // Enlaces
+    .nav-link {
+        position: relative;
+        transition: color 0.25s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: $c-primary;
+            transition: all 0.25s ease;
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+            color: $c-primary;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    // Contenido visible
+    &.is-stuck {
+        border-top-color: transparent;
+        background: $c-surface;
+        padding: 0.5rem 1.5rem;
+        height: auto;
+
+        .navbar-collapse {
+            opacity: 1;
+            transform: none;
+            pointer-events: auto;
+        }
+
+        .navbar-toggler {
+            opacity: 1;
+            pointer-events: auto;
+            border: 1px solid $c-primary;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar {
+        .navbar-collapse {
+            background-color: $c-surface;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .nav-link {
+            margin: 0.5rem 0;
+        }
+    }
+}
