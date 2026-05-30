@@ -2,23 +2,30 @@
   "title": "Projects",
   "projects": [
     {
+      "title": "Platinum 🏆",
+      "description": "Platinum is a web page dedicated to the management of the data retrieved from the Steam Api. Its main focus is on getting the games information, their achievements and the users that own them.",
+      "tech": ["HTML5", "Angular", "Spring-boot", "SCSS", "Tailwind", "GitHub"],
+      "link": "https://github.com/cperezjuarez/movieApp",
+      "image": "public/platinum.png"
+    },
+    {
       "title": "Sushi Maker",
       "description": "Sushi restaurant management system.",
-      "tech": ["Angular", "SASS", "Bootstrap"],
+      "tech": ["HTML5", "Angular", "SASS", "Bootstrap", "GitHub"],
       "link": "https://github.com/cperezjuarez/sushiMaker",
       "image": "public/sushi-maker.png"
     },
     {
       "title": "Pizza Maker",
       "description": "Pizza order management system.",
-      "tech": ["Java", "Spring-boot", "Thymeleaf"],
+      "tech": ["HTML5", "Spring-boot", "Thymeleaf", "Bootstrap", "GitHub"],
       "link": "https://github.com/cperezjuarez/pizzaMaker",
       "image": "public/pizza-maker.png"
     },
     {
       "title": "Pokémon",
       "description": "Information page about Pokémon TCGP.",
-      "tech": ["SASS", "JavaScript"],
+      "tech": ["HTML5", "SASS", "JavaScript", "GitHub"],
       "link": "https://github.com/kiro85/pokemon",
       "image": "public/pokemon.png"
     }

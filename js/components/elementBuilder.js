@@ -9,6 +9,8 @@ function buildBadgeClass(tech) {
   const value = tech.toLowerCase();
 
   switch (value) {
+    case "html5":
+      return "bg-danger text-white";
     case "angular":
       return "bg-danger text-black";
     case "java":
@@ -17,11 +19,15 @@ function buildBadgeClass(tech) {
       return "bg-success text-black";
     case "sass":
       return "bg-danger-subtle text-black";
+    case "tailwind":
+      return "bg-info text-black";
     case "bootstrap":
       return "bg-info text-black";
     case "javascript":
       return "bg-warning text-black";
     case "mysql":
+      return "bg-primary text-white";
+    case "postgresql":
       return "bg-primary text-white";
     case "docker":
       return "bg-info text-black";
