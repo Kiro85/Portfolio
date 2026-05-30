@@ -1,0 +1,15 @@
+{
+  "title": "Skills",
+  "skills": [
+    { "name": "HTML5", "percent": 100, "icon": "devicon-html5-plain colored" },
+    { "name": "CSS3", "percent": 90, "icon": "devicon-css3-plain colored" },
+    { "name": "SASS", "percent": 80, "icon": "devicon-sass-original colored" },
+    { "name": "Bootstrap", "percent": 50, "icon": "devicon-bootstrap-plain colored" },
+    { "name": "Angular", "percent": 30, "icon": "devicon-angularjs-plain colored" },
+    { "name": "Java", "percent": 70, "icon": "devicon-java-plain colored" },
+    { "name": "Spring Boot", "percent": 30, "icon": "devicon-spring-plain colored" },
+    { "name": "MySQL", "percent": 50, "icon": "devicon-mysql-plain colored" },
+    { "name": "Docker", "percent": 65, "icon": "devicon-docker-plain colored" },
+    { "name": "GitHub", "percent": 55, "icon": "devicon-github-plain colored" }
+  ]
+}
